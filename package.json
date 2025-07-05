@@ -1,0 +1,33 @@
+{
+  "name": "healthcare-backend",
+  "version": "1.0.0",
+  "description": "Backend REST API built with Node.js, Express, and MySQL (Sequelize)",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql",
+    "sequelize"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.19.3",
+    "express-rate-limit": "^7.0.0",
+    "joi": "^17.10.1",
+    "jsonwebtoken": "^9.3.2",
+    "mysql2": "^3.10.1",
+    "sequelize": "^6.37.2",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

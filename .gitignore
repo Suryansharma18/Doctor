@@ -1,0 +1,71 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+.env
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Build artifacts
+dist/
+build/
+
+# Coverage directory used by testing tools like istanbul
+coverage/
+
+# Database dumps
+*.sql
+*.sqlite
+*.db
+
+# Sequelize auto-generated config
+src/config/config.json
+
+# Redis dump files
+dump.rdb
+
+# Optional npm cache directory
+.npm
+
+# Logs directory if manually created
+src/logs/
+
+# Migrations lock
+.sequelize-meta.json
+
+# Local MySQL data folders (if applicable)
+mysql-data/
+
+# Temporary files
+tmp/
+temp/
+
+# Debugging logs
+*.pid
+*.seed
+
+# Optional: PM2 logs
+pids/
+*.pid
+*.log
+
+# Optional: dotenv-backup
+.env.backup

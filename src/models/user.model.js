@@ -11,21 +11,22 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    age: {
+      type: DataTypes.INTEGER,
+    },
+    role: {
+      type: DataTypes.ENUM('doctor', 'nurse', 'frontend'),
+      allowNull: false,
+      defaultValue: 'frontend',
+    },
     email: {
       type: DataTypes.STRING,
       unique: true,
       allowNull: false,
-      validate: {
-        isEmail: true,
-      },
     },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    role: {
-      type: DataTypes.ENUM('doctor', 'patient', 'admin'),
-      defaultValue: 'patient',
     },
   });
 

@@ -1,3 +1,4 @@
+
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -9,13 +10,14 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middlewares
 app.use(cors());
 app.use(express.json());
 
 // Routes
 app.use('/api/auth', authRoutes);
 
-// Global error handler
+// 👇 Global error handler - Add it right here, AFTER all routes
 app.use(errorHandler);
 
 // Connect DB and start server
